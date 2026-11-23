@@ -13,7 +13,7 @@ const hm = t => { const d = new Date(t); return pad(d.getHours()) + ':' + pad(d.
 const dmy = t => { const d = new Date(t); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); };
 const dt = t => dmy(t) + ' ' + hm(t);
 const CUR = 'ج.م';
-const TYPES = { ps: 'بلايستيشن', billiard: 'بلياردو', pong: 'بنج بونج' };
+const TYPES = { ps: 'بلايستيشن', billiard: 'بلياردو', pong: 'بنج بونج', tv: 'نتفليكس' };
 const CATS = { drink: 'مشروبات', food: 'أكل', snack: 'سناكس', other: 'حاجات تانية' };
 
 /* ---------- storage ---------- */
@@ -31,7 +31,8 @@ function seed() {
       { id: 'st4', name: 'Galaxy Room VIP PS5', type: 'ps', price: 70, vip: 0, on: true },
       { id: 'st5', name: 'Blue billiard table', type: 'billiard', price: 50, vip: 0, on: true },
       { id: 'st6', name: 'Red billiard table', type: 'billiard', price: 50, vip: 0, on: true },
-      { id: 'st7', name: 'King pong room', type: 'pong', price: 50, vip: 0, on: true }
+      { id: 'st7', name: 'King pong room', type: 'pong', price: 50, vip: 0, on: true },
+      { id: 'st8', name: 'Netflix room', type: 'tv', price: 80, vip: 0, on: true }
     ],
     products: [
       P('شاي', 'drink', 15, 40), P('قهوة', 'drink', 25, 30), P('نسكافيه', 'drink', 25, 30), P('مياه', 'drink', 10, 48),
