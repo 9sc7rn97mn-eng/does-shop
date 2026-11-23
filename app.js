@@ -32,7 +32,7 @@ function seed() {
       { id: 'st5', name: 'Blue billiard table', type: 'billiard', price: 50, vip: 0, on: true },
       { id: 'st6', name: 'Red billiard table', type: 'billiard', price: 50, vip: 0, on: true },
       { id: 'st7', name: 'King pong room', type: 'pong', price: 50, vip: 0, on: true },
-      { id: 'st8', name: 'Netflix room', type: 'tv', price: 80, vip: 0, on: true }
+      { id: 'st8', name: 'Netflix Room VIP', type: 'tv', price: 80, vip: 0, on: true }
     ],
     products: [
       P('شاي', 'drink', 15, 40), P('قهوة', 'drink', 25, 30), P('نسكافيه', 'drink', 25, 30), P('مياه', 'drink', 10, 48),
